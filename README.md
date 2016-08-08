@@ -1,4 +1,4 @@
-# react-choosenhlteam
+# React.js - Choose your NHL Team
 My first React.js app
 
 ## Dependencies:
