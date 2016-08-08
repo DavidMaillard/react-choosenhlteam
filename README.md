@@ -14,6 +14,7 @@ Make sure you have the Webpack dev server installed:
 
 ## Launch the app
 
+> gulp deploy
 > npm run start-webpack-server
 
 And go to the URL : http://localhost:8080
