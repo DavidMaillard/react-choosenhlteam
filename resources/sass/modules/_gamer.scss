@@ -1,0 +1,126 @@
+.gamers {
+
+    width: 100%;
+    overflow: hidden;
+
+    .gamer {
+
+        float: left;
+        width: 50%;
+        overflow: hidden;
+        position: relative;
+
+        .title {
+
+            text-align: center;
+            color: $grey;
+            line-height: 36px;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .teams-panel {
+
+            height: 250px;
+            position: relative;
+        }
+
+        &.loading .loader {
+
+            display: block;
+        }
+
+        &.left {
+
+            border-right: .5px solid $white;
+
+            .title {
+
+                background: rgba(0,121,181,1);
+                background: -moz-linear-gradient(-45deg, rgba(0,121,181,1) 0%, rgba(0,138,207,1) 100%);
+                background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,121,181,1)), color-stop(100%, rgba(0,138,207,1)));
+                background: -webkit-linear-gradient(-45deg, rgba(0,121,181,1) 0%, rgba(0,138,207,1) 100%);
+                background: -o-linear-gradient(-45deg, rgba(0,121,181,1) 0%, rgba(0,138,207,1) 100%);
+                background: -ms-linear-gradient(-45deg, rgba(0,121,181,1) 0%, rgba(0,138,207,1) 100%);
+                background: linear-gradient(135deg, rgba(0,121,181,1) 0%, rgba(0,138,207,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079b5', endColorstr='#008acf', GradientType=1 );
+            }
+
+            .teams-panel {
+
+                background: rgba(54,54,59,1);
+                background: -moz-linear-gradient(45deg, rgba(54,54,59,1) 0%, rgba(69,69,83,1) 100%);
+                background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(54,54,59,1)), color-stop(100%, rgba(69,69,83,1)));
+                background: -webkit-linear-gradient(45deg, rgba(54,54,59,1) 0%, rgba(69,69,83,1) 100%);
+                background: -o-linear-gradient(45deg, rgba(54,54,59,1) 0%, rgba(69,69,83,1) 100%);
+                background: -ms-linear-gradient(45deg, rgba(54,54,59,1) 0%, rgba(69,69,83,1) 100%);
+                background: linear-gradient(45deg, rgba(54,54,59,1) 0%, rgba(69,69,83,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36363b', endColorstr='#454553', GradientType=1 );
+            }
+
+            .regions-panel {
+
+                background: url('./images/world-map.svg') no-repeat bottom -5% left / 95%, rgba(54,54,59,1);
+                background: url('./images/world-map.svg') no-repeat bottom -5% left / 95%, -moz-linear-gradient(45deg, rgba(54,54,59,1) 0%, rgba(69,69,83,1) 100%);
+                background: url('./images/world-map.svg') no-repeat bottom -5% left / 95%, -webkit-gradient(left bottom, right top, color-stop(0%, rgba(54,54,59,1)), color-stop(100%, rgba(69,69,83,1)));
+                background: url('./images/world-map.svg') no-repeat bottom -5% left / 95%, -webkit-linear-gradient(45deg, rgba(54,54,59,1) 0%, rgba(69,69,83,1) 100%);
+                background: url('./images/world-map.svg') no-repeat bottom -5% left / 95%, -o-linear-gradient(45deg, rgba(54,54,59,1) 0%, rgba(69,69,83,1) 100%);
+                background: url('./images/world-map.svg') no-repeat bottom -5% left / 95%, -ms-linear-gradient(45deg, rgba(54,54,59,1) 0%, rgba(69,69,83,1) 100%);
+                background: url('./images/world-map.svg') no-repeat bottom -5% left / 95%, linear-gradient(45deg, rgba(54,54,59,1) 0%, rgba(69,69,83,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36363b', endColorstr='#454553', GradientType=1 );
+            }
+
+            .teams-panel .loader {
+
+                background-image: url('./images/loader-left.svg');
+            }
+        }
+
+        &.right {
+
+            border-left: .5px solid $white;
+
+            .title {
+
+                background: rgba(185,60,60,1);
+                background: -moz-linear-gradient(-45deg, rgba(185,60,60,1) 0%, rgba(166,54,54,1) 100%);
+                background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(185,60,60,1)), color-stop(100%, rgba(166,54,54,1)));
+                background: -webkit-linear-gradient(-45deg, rgba(185,60,60,1) 0%, rgba(166,54,54,1) 100%);
+                background: -o-linear-gradient(-45deg, rgba(185,60,60,1) 0%, rgba(166,54,54,1) 100%);
+                background: -ms-linear-gradient(-45deg, rgba(185,60,60,1) 0%, rgba(166,54,54,1) 100%);
+                background: linear-gradient(135deg, rgba(185,60,60,1) 0%, rgba(166,54,54,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b93c3c', endColorstr='#a63636', GradientType=1 );
+            }
+
+            .teams-panel {
+
+                background: rgba(69,69,83,1);
+                background: -moz-linear-gradient(-45deg, rgba(69,69,83,1) 0%, rgba(54,54,59,1) 100%);
+                background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(69,69,83,1)), color-stop(100%, rgba(54,54,59,1)));
+                background: -webkit-linear-gradient(-45deg, rgba(69,69,83,1) 0%, rgba(54,54,59,1) 100%);
+                background: -o-linear-gradient(-45deg, rgba(69,69,83,1) 0%, rgba(54,54,59,1) 100%);
+                background: -ms-linear-gradient(-45deg, rgba(69,69,83,1) 0%, rgba(54,54,59,1) 100%);
+                background: linear-gradient(135deg, rgba(69,69,83,1) 0%, rgba(54,54,59,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454553', endColorstr='#36363b', GradientType=1 );
+            }
+
+            .regions-panel {
+
+                background: url('./images/world-map.svg') no-repeat bottom -5% left / 95%, rgba(69,69,83,1);
+                background: url('./images/world-map.svg') no-repeat bottom -5% left / 95%, -moz-linear-gradient(-45deg, rgba(69,69,83,1) 0%, rgba(54,54,59,1) 100%);
+                background: url('./images/world-map.svg') no-repeat bottom -5% left / 95%, -webkit-gradient(left top, right bottom, color-stop(0%, rgba(69,69,83,1)), color-stop(100%, rgba(54,54,59,1)));
+                background: url('./images/world-map.svg') no-repeat bottom -5% left / 95%, -webkit-linear-gradient(-45deg, rgba(69,69,83,1) 0%, rgba(54,54,59,1) 100%);
+                background: url('./images/world-map.svg') no-repeat bottom -5% left / 95%, -o-linear-gradient(-45deg, rgba(69,69,83,1) 0%, rgba(54,54,59,1) 100%);
+                background: url('./images/world-map.svg') no-repeat bottom -5% left / 95%, -ms-linear-gradient(-45deg, rgba(69,69,83,1) 0%, rgba(54,54,59,1) 100%);
+                background: url('./images/world-map.svg') no-repeat bottom -5% left / 95%, linear-gradient(135deg, rgba(69,69,83,1) 0%, rgba(54,54,59,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454553', endColorstr='#36363b', GradientType=1 );
+            }
+
+            .teams-panel .loader {
+
+                background-image: url('./images/loader-right.svg');
+            }
+        }
+    }
+}

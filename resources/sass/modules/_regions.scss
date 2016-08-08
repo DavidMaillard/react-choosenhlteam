@@ -1,0 +1,50 @@
+.regions-panel {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    .region-button {
+
+        position: absolute;
+        width: calc(50% - 7.5px);
+        top: 5px;
+        bottom: 5px;
+        border: 1px solid rgba($white, .5);
+        border-radius: 3px;
+        background: rgba($white, .1);
+        transition: background-color ease-out .2s;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100px;
+
+        &:hover {
+
+            cursor: pointer;
+            background-color: rgba($white, .3);
+        }
+
+        &.left {
+
+            left: 5px;
+        }
+
+        &.right {
+
+            right: 5px;
+        }
+    }
+
+    .region-instruction {
+
+        position: absolute;
+        display: inline-block;
+        color: $white;
+        font-family: $montserrat;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

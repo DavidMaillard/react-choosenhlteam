@@ -2,11 +2,11 @@
   "name": "nhl-react-app",
   "version": "0.1.0",
   "description": "My first React.js app.",
-  "main": "./PizzaBot/server.js",
+  "main": "./nhlReactApp/server.js",
   "private": true,
   "scripts": {
     "start-webpack-server": "webpack-dev-server --hot --inline --colors --progress",
-    "start": "node ./PizzaBot/server.js"
+    "start": "node ./nhlReactApp/server.js"
   },
   "keywords": [
     "react",

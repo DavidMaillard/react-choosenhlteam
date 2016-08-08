@@ -1,0 +1,206 @@
+.selected-panel {
+
+    position: absolute;
+    top: 36px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: transform ease-out .4s;
+
+    .selected-team-panel {
+
+        height: 250px;
+        position: relative;
+
+        .team-logo {
+
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-size: 400px;
+        }
+
+        .team-name {
+
+            padding-top: 50px;
+            text-transform: uppercase;
+            font-family: $montserrat;
+            font-size: 32px;
+            font-weight: 900;
+            color: $white;
+        }
+
+        .team-city {
+
+            margin-top: 10px;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: 300;
+            color: $grey;
+        }
+
+        .team-rank {
+
+            font-size: 100px;
+            font-weight: 900;
+            color: $white;
+        }
+    }
+
+    .selected-players-panel {
+
+        height: calc(100% - 250px);
+        overflow-y: scroll;
+
+        .selected-player {
+
+            width: 100%;
+            background: $white;
+            border-spacing: 0;
+
+            tr {
+
+                height: 75px;
+
+                &:nth-child(even) {
+
+                    background: rgba($grey, .50);
+                }
+
+                .photo img {
+
+                    padding-left: 10px;
+                    height: 50px;
+                }
+
+                .name {
+
+                    padding: 0 10px;
+                    width: 65%;
+                    font-weight: 300;
+                    text-transform: capitalize;
+
+                    span {
+
+                        text-transform: uppercase;
+                        margin-left: 5px;
+                        font-weight: 700;
+                    }
+                }
+
+                .position {
+
+                    padding-right: 10px;
+                    width: 25%;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+.gamer {
+
+    &.left {
+
+        .selected-panel {
+
+            transform: translateX(-100%);
+
+            &.active {
+
+                transform: translateX(0);
+            }
+
+            .selected-team-panel {
+
+                background: rgba(0,121,181,1);
+                background: -moz-linear-gradient(-45deg, rgba(0,121,181,1) 0%, rgba(69,69,83,1) 75%, rgba(69,69,83,1) 100%);
+                background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,121,181,1)), color-stop(75%, rgba(69,69,83,1)), color-stop(100%, rgba(69,69,83,1)));
+                background: -webkit-linear-gradient(-45deg, rgba(0,121,181,1) 0%, rgba(69,69,83,1) 75%, rgba(69,69,83,1) 100%);
+                background: -o-linear-gradient(-45deg, rgba(0,121,181,1) 0%, rgba(69,69,83,1) 75%, rgba(69,69,83,1) 100%);
+                background: -ms-linear-gradient(-45deg, rgba(0,121,181,1) 0%, rgba(69,69,83,1) 75%, rgba(69,69,83,1) 100%);
+                background: linear-gradient(135deg, rgba(0,121,181,1) 0%, rgba(69,69,83,1) 75%, rgba(69,69,83,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079b5', endColorstr='#454553', GradientType=1 );
+
+                .team-logo {
+
+                    background-position: left -100px center;
+                }
+
+                .team-name, .team-city {
+
+                    margin-right: 20px;
+                    text-align: right;
+                }
+
+                .team-rank {
+
+                    margin: 75px 20px 0 0;
+                    text-align: right;
+
+                    &:before {
+
+                        content: 'rank';
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: $grey;
+                    }
+                }
+            }
+        }
+    }
+
+    &.right {
+
+        .selected-panel {
+
+            transform: translateX(100%);
+
+            &.active {
+
+                transform: translateX(0);
+            }
+
+            .selected-team-panel {
+
+                background: rgba(69,69,83,1);
+                background: -moz-linear-gradient(45deg, rgba(69,69,83,1) 0%, rgba(69,69,83,1) 25%, rgba(166,54,54,1) 100%);
+                background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(69,69,83,1)), color-stop(25%, rgba(69,69,83,1)), color-stop(100%, rgba(166,54,54,1)));
+                background: -webkit-linear-gradient(45deg, rgba(69,69,83,1) 0%, rgba(69,69,83,1) 25%, rgba(166,54,54,1) 100%);
+                background: -o-linear-gradient(45deg, rgba(69,69,83,1) 0%, rgba(69,69,83,1) 25%, rgba(166,54,54,1) 100%);
+                background: -ms-linear-gradient(45deg, rgba(69,69,83,1) 0%, rgba(69,69,83,1) 25%, rgba(166,54,54,1) 100%);
+                background: linear-gradient(45deg, rgba(69,69,83,1) 0%, rgba(69,69,83,1) 25%, rgba(166,54,54,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454553', endColorstr='#a63636', GradientType=1 );
+
+                .team-logo {
+
+                    background-position: right -100px center;
+                }
+
+                .team-name, .team-city {
+
+                    margin-left: 20px;
+                }
+
+                .team-rank {
+
+                    margin: 75px 0 0 20px;
+
+                    &:after {
+
+                        content: 'rank';
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: $grey;
+                    }
+                }
+            }
+        }
+    }
+}

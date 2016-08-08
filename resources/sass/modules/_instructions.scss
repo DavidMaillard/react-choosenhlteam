@@ -1,0 +1,77 @@
+.instructions-panel {
+
+    .instruction-title {
+
+        text-align: center;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 20px 10px;
+    }
+
+    .instruction {
+
+        display: table;
+
+        &:nth-child(2), &:nth-child(4) {
+
+            background-color: darken($grey, 5%);
+        }
+
+        &.done {
+
+            background: rgba(green, .1);
+
+            .number {
+
+                text-indent: -999px;
+                background: url('./images/check-icon.svg') no-repeat center center / 35px;
+            }
+        }
+
+        .number {
+
+            text-align: center;
+            display: table-cell;
+            width: 15%;
+            height: 100px;
+            font-size: 28px;
+            font-weight: 900;
+            font-family: $montserrat;
+            vertical-align: middle;
+            transition: all ease-out .2s;
+        }
+
+        .icon {
+
+            display: table-cell;
+            width: 25%;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 75px;
+
+            &.map {
+
+                background-image: url('./images/map-icon.svg');
+            }
+
+            &.jersey {
+
+                background-image: url('./images/jersey-icon.svg');
+            }
+
+            &.controller {
+
+                background-image: url('./images/controller-icon.svg');
+            }
+        }
+
+        .text {
+
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0 10px;
+        }
+    }
+}

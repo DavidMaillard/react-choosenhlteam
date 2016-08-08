@@ -1,0 +1,441 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+/*
+ * 		Settings
+ * 		--------
+ */
+/*
+ * 		Colors
+ * 		------
+ */
+/*
+ * 		Fonts
+ * 		-----
+ */
+/*
+ * 		Breakpoints
+ * 		-----------
+ */
+/*
+ * 		Components
+ * 		----------
+ */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1em;
+  color: #454553;
+  background-color: #454553; }
+
+body {
+  position: relative;
+  padding-bottom: 30px; }
+
+div,
+p,
+header,
+nav,
+aside,
+section,
+article {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+textarea,
+input,
+select,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  line-height: 1em; }
+  textarea:focus,
+  input:focus,
+  select:focus,
+  button:focus {
+    outline: none; }
+
+a {
+  text-decoration: none;
+  border: none; }
+
+.centered {
+  text-align: center; }
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+/*
+ * 		Modules
+ * 		-------
+ */
+header {
+  height: 450px;
+  padding: 20px;
+  background: url("./images/header-background.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-box-shadow: inset 0px -10px 25px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px -10px 25px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px -10px 25px 0px rgba(0, 0, 0, 0.25); }
+  header .brand {
+    padding-left: 50px;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #454553;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    background: url("./images/react-logo.svg") no-repeat left center;
+    background-size: contain; }
+
+main {
+  min-height: calc(100vh - 450px);
+  position: relative; }
+  main #app {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -286px);
+    width: 100%;
+    max-width: 1024px;
+    overflow: hidden;
+    background: #D8E9F0;
+    min-height: 500px;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px; }
+
+.gamers {
+  width: 100%;
+  overflow: hidden; }
+  .gamers .gamer {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    position: relative; }
+    .gamers .gamer .title {
+      text-align: center;
+      color: #D8E9F0;
+      line-height: 36px;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin: 0; }
+    .gamers .gamer .teams-panel {
+      height: 250px;
+      position: relative; }
+    .gamers .gamer.loading .loader {
+      display: block; }
+    .gamers .gamer.left {
+      border-right: 0.5px solid #FFFFFF; }
+      .gamers .gamer.left .title {
+        background: #0079b5;
+        background: -moz-linear-gradient(-45deg, #0079b5 0%, #008acf 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, #0079b5), color-stop(100%, #008acf));
+        background: -webkit-linear-gradient(-45deg, #0079b5 0%, #008acf 100%);
+        background: -o-linear-gradient(-45deg, #0079b5 0%, #008acf 100%);
+        background: -ms-linear-gradient(-45deg, #0079b5 0%, #008acf 100%);
+        background: linear-gradient(135deg, #0079b5 0%, #008acf 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079b5', endColorstr='#008acf', GradientType=1 ); }
+      .gamers .gamer.left .teams-panel {
+        background: #36363b;
+        background: -moz-linear-gradient(45deg, #36363b 0%, #454553 100%);
+        background: -webkit-gradient(left bottom, right top, color-stop(0%, #36363b), color-stop(100%, #454553));
+        background: -webkit-linear-gradient(45deg, #36363b 0%, #454553 100%);
+        background: -o-linear-gradient(45deg, #36363b 0%, #454553 100%);
+        background: -ms-linear-gradient(45deg, #36363b 0%, #454553 100%);
+        background: linear-gradient(45deg, #36363b 0%, #454553 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36363b', endColorstr='#454553', GradientType=1 ); }
+      .gamers .gamer.left .regions-panel {
+        background: url("./images/world-map.svg") no-repeat bottom -5% left/95%, #36363b;
+        background: url("./images/world-map.svg") no-repeat bottom -5% left/95%, -moz-linear-gradient(45deg, #36363b 0%, #454553 100%);
+        background: url("./images/world-map.svg") no-repeat bottom -5% left/95%, -webkit-gradient(left bottom, right top, color-stop(0%, #36363b), color-stop(100%, #454553));
+        background: url("./images/world-map.svg") no-repeat bottom -5% left/95%, -webkit-linear-gradient(45deg, #36363b 0%, #454553 100%);
+        background: url("./images/world-map.svg") no-repeat bottom -5% left/95%, -o-linear-gradient(45deg, #36363b 0%, #454553 100%);
+        background: url("./images/world-map.svg") no-repeat bottom -5% left/95%, -ms-linear-gradient(45deg, #36363b 0%, #454553 100%);
+        background: url("./images/world-map.svg") no-repeat bottom -5% left/95%, linear-gradient(45deg, #36363b 0%, #454553 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36363b', endColorstr='#454553', GradientType=1 ); }
+      .gamers .gamer.left .teams-panel .loader {
+        background-image: url("./images/loader-left.svg"); }
+    .gamers .gamer.right {
+      border-left: 0.5px solid #FFFFFF; }
+      .gamers .gamer.right .title {
+        background: #b93c3c;
+        background: -moz-linear-gradient(-45deg, #b93c3c 0%, #a63636 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, #b93c3c), color-stop(100%, #a63636));
+        background: -webkit-linear-gradient(-45deg, #b93c3c 0%, #a63636 100%);
+        background: -o-linear-gradient(-45deg, #b93c3c 0%, #a63636 100%);
+        background: -ms-linear-gradient(-45deg, #b93c3c 0%, #a63636 100%);
+        background: linear-gradient(135deg, #b93c3c 0%, #a63636 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b93c3c', endColorstr='#a63636', GradientType=1 ); }
+      .gamers .gamer.right .teams-panel {
+        background: #454553;
+        background: -moz-linear-gradient(-45deg, #454553 0%, #36363b 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, #454553), color-stop(100%, #36363b));
+        background: -webkit-linear-gradient(-45deg, #454553 0%, #36363b 100%);
+        background: -o-linear-gradient(-45deg, #454553 0%, #36363b 100%);
+        background: -ms-linear-gradient(-45deg, #454553 0%, #36363b 100%);
+        background: linear-gradient(135deg, #454553 0%, #36363b 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454553', endColorstr='#36363b', GradientType=1 ); }
+      .gamers .gamer.right .regions-panel {
+        background: url("./images/world-map.svg") no-repeat bottom -5% left/95%, #454553;
+        background: url("./images/world-map.svg") no-repeat bottom -5% left/95%, -moz-linear-gradient(-45deg, #454553 0%, #36363b 100%);
+        background: url("./images/world-map.svg") no-repeat bottom -5% left/95%, -webkit-gradient(left top, right bottom, color-stop(0%, #454553), color-stop(100%, #36363b));
+        background: url("./images/world-map.svg") no-repeat bottom -5% left/95%, -webkit-linear-gradient(-45deg, #454553 0%, #36363b 100%);
+        background: url("./images/world-map.svg") no-repeat bottom -5% left/95%, -o-linear-gradient(-45deg, #454553 0%, #36363b 100%);
+        background: url("./images/world-map.svg") no-repeat bottom -5% left/95%, -ms-linear-gradient(-45deg, #454553 0%, #36363b 100%);
+        background: url("./images/world-map.svg") no-repeat bottom -5% left/95%, linear-gradient(135deg, #454553 0%, #36363b 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454553', endColorstr='#36363b', GradientType=1 ); }
+      .gamers .gamer.right .teams-panel .loader {
+        background-image: url("./images/loader-right.svg"); }
+
+.regions-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .regions-panel .region-button {
+    position: absolute;
+    width: calc(50% - 7.5px);
+    top: 5px;
+    bottom: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color ease-out .2s;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100px; }
+    .regions-panel .region-button:hover {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.3); }
+    .regions-panel .region-button.left {
+      left: 5px;
+      background-image: url("./images/western-logo.png"); }
+    .regions-panel .region-button.right {
+      right: 5px;
+      background-image: url("./images/eastern-logo.png"); }
+  .regions-panel .region-instruction {
+    position: absolute;
+    display: inline-block;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%); }
+
+.instructions-panel .instruction-title {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 20px 10px; }
+
+.instructions-panel .instruction {
+  display: table; }
+  .instructions-panel .instruction:nth-child(2), .instructions-panel .instruction:nth-child(4) {
+    background-color: #c6dfe9; }
+  .instructions-panel .instruction.done {
+    background: rgba(0, 128, 0, 0.1); }
+    .instructions-panel .instruction.done .number {
+      text-indent: -999px;
+      background: url("./images/check-icon.svg") no-repeat center center/35px; }
+  .instructions-panel .instruction .number {
+    text-align: center;
+    display: table-cell;
+    width: 15%;
+    height: 100px;
+    font-size: 28px;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+    vertical-align: middle;
+    transition: all ease-out .2s; }
+  .instructions-panel .instruction .icon {
+    display: table-cell;
+    width: 25%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 75px; }
+    .instructions-panel .instruction .icon.map {
+      background-image: url("./images/map-icon.svg"); }
+    .instructions-panel .instruction .icon.jersey {
+      background-image: url("./images/jersey-icon.svg"); }
+    .instructions-panel .instruction .icon.controller {
+      background-image: url("./images/controller-icon.svg"); }
+  .instructions-panel .instruction .text {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 10px; }
+
+.teams-panel {
+  position: relative; }
+  .teams-panel .loader {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    padding-top: 75px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 50px; }
+  .teams-panel .teams-display {
+    overflow: hidden; }
+    .teams-panel .teams-display .team {
+      display: none;
+      float: left;
+      width: 50%;
+      height: 250px;
+      text-align: center;
+      transition: background ease-out .2s; }
+      .teams-panel .teams-display .team:hover {
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.1); }
+      .teams-panel .teams-display .team .logo {
+        margin-top: 40px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain; }
+      .teams-panel .teams-display .team .team-name {
+        margin: 20px 0 10px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 24px; }
+      .teams-panel .teams-display .team .team-city {
+        color: #D8E9F0;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 18px; }
+
+.selected-panel {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: transform ease-out .4s; }
+  .selected-panel .selected-team-panel {
+    height: 250px;
+    position: relative; }
+    .selected-panel .selected-team-panel .team-logo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-size: 400px; }
+    .selected-panel .selected-team-panel .team-name {
+      padding-top: 50px;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-size: 32px;
+      font-weight: 900;
+      color: #FFFFFF; }
+    .selected-panel .selected-team-panel .team-city {
+      margin-top: 10px;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 300;
+      color: #D8E9F0; }
+    .selected-panel .selected-team-panel .team-rank {
+      font-size: 100px;
+      font-weight: 900;
+      color: #FFFFFF; }
+  .selected-panel .selected-players-panel {
+    height: calc(100% - 250px);
+    overflow-y: scroll; }
+    .selected-panel .selected-players-panel .selected-player {
+      width: 100%;
+      background: #FFFFFF;
+      border-spacing: 0; }
+      .selected-panel .selected-players-panel .selected-player tr {
+        height: 75px; }
+        .selected-panel .selected-players-panel .selected-player tr:nth-child(even) {
+          background: rgba(216, 233, 240, 0.5); }
+        .selected-panel .selected-players-panel .selected-player tr .photo img {
+          padding-left: 10px;
+          height: 50px; }
+        .selected-panel .selected-players-panel .selected-player tr .name {
+          padding: 0 10px;
+          width: 65%;
+          font-weight: 300;
+          text-transform: capitalize; }
+          .selected-panel .selected-players-panel .selected-player tr .name span {
+            text-transform: uppercase;
+            margin-left: 5px;
+            font-weight: 700; }
+        .selected-panel .selected-players-panel .selected-player tr .position {
+          padding-right: 10px;
+          width: 25%;
+          text-align: right; }
+
+.gamer.left .selected-panel {
+  transform: translateX(-100%); }
+  .gamer.left .selected-panel.active {
+    transform: translateX(0); }
+  .gamer.left .selected-panel .selected-team-panel {
+    background: #0079b5;
+    background: -moz-linear-gradient(-45deg, #0079b5 0%, #454553 75%, #454553 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, #0079b5), color-stop(75%, #454553), color-stop(100%, #454553));
+    background: -webkit-linear-gradient(-45deg, #0079b5 0%, #454553 75%, #454553 100%);
+    background: -o-linear-gradient(-45deg, #0079b5 0%, #454553 75%, #454553 100%);
+    background: -ms-linear-gradient(-45deg, #0079b5 0%, #454553 75%, #454553 100%);
+    background: linear-gradient(135deg, #0079b5 0%, #454553 75%, #454553 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079b5', endColorstr='#454553', GradientType=1 ); }
+    .gamer.left .selected-panel .selected-team-panel .team-logo {
+      background-position: left -100px center; }
+    .gamer.left .selected-panel .selected-team-panel .team-name, .gamer.left .selected-panel .selected-team-panel .team-city {
+      margin-right: 20px;
+      text-align: right; }
+    .gamer.left .selected-panel .selected-team-panel .team-rank {
+      margin: 75px 20px 0 0;
+      text-align: right; }
+      .gamer.left .selected-panel .selected-team-panel .team-rank:before {
+        content: 'rank';
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 400;
+        color: #D8E9F0; }
+
+.gamer.right .selected-panel {
+  transform: translateX(100%); }
+  .gamer.right .selected-panel.active {
+    transform: translateX(0); }
+  .gamer.right .selected-panel .selected-team-panel {
+    background: #454553;
+    background: -moz-linear-gradient(45deg, #454553 0%, #454553 25%, #a63636 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #454553), color-stop(25%, #454553), color-stop(100%, #a63636));
+    background: -webkit-linear-gradient(45deg, #454553 0%, #454553 25%, #a63636 100%);
+    background: -o-linear-gradient(45deg, #454553 0%, #454553 25%, #a63636 100%);
+    background: -ms-linear-gradient(45deg, #454553 0%, #454553 25%, #a63636 100%);
+    background: linear-gradient(45deg, #454553 0%, #454553 25%, #a63636 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454553', endColorstr='#a63636', GradientType=1 ); }
+    .gamer.right .selected-panel .selected-team-panel .team-logo {
+      background-position: right -100px center; }
+    .gamer.right .selected-panel .selected-team-panel .team-name, .gamer.right .selected-panel .selected-team-panel .team-city {
+      margin-left: 20px; }
+    .gamer.right .selected-panel .selected-team-panel .team-rank {
+      margin: 75px 0 0 20px; }
+      .gamer.right .selected-panel .selected-team-panel .team-rank:after {
+        content: 'rank';
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 400;
+        color: #D8E9F0; }
+
+/*
+ * 		Templates
+ * 		---------
+ */

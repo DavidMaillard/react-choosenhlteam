@@ -1,0 +1,67 @@
+html,
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: $lato;
+    font-size: 16px;
+    line-height: 1em;
+    color: $black;
+    background-color: $black;
+}
+
+body {
+
+    position: relative;
+    padding-bottom: 30px;
+}
+
+
+div,
+p,
+header,
+nav,
+aside,
+section,
+article {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+textarea,
+input,
+select,
+button{
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &:focus {
+
+        outline: none;
+    }
+
+    line-height: 1em;
+}
+
+a {
+
+    text-decoration: none;
+    border: none;
+}
+
+.centered {
+
+    text-align: center;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>NHL React</title>
+
+    <link href="./app/app.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <header>
+        <div class="brand">My first React.js app</div>
+    </header>
+
+    <main>
+        <!--<div id="app"></div>-->
+        <div id="main">
+            <div class="gamers">
+                <div class="gamer left">
+                    <h2 class="title">Player 1</h2>
+
+                    <div class="teams-panel">
+                        <div class="loader">Please wait a moment...</div>
+
+                        <div class="teams-display">
+                            <div class="team">
+                                <div class="logo" style="background-image:url('./app/images/teams/flyers.svg')"></div>
+                                <h3 class="team-name">Flyers</h3>
+                                <div class="team-city">Philadelphia</div>
+                            </div>
+                            <div class="team">
+                                <div class="logo" style="background-image:url('./app/images/teams/canadiens.svg')"></div>
+                                <h3 class="team-name">Canadiens</h3>
+                                <div class="team-city">Montreal</div>
+                            </div>
+                        </div>
+
+                        <div class="regions-panel">
+                            <div class="region-button left"></div>
+                            <div class="region-button right"></div>
+                            <div class="region-instruction">Select a region</div>
+                        </div>
+                    </div>
+
+                    <div class="instructions-panel">
+                        <h2 class="instruction-title">Instructions</h2>
+                        <div class="instruction">
+                            <div class="number">1</div>
+                            <div class="icon map"></div>
+                            <div class="text">Start with choosing the conference of your favorite teams.</div>
+                        </div>
+                        <div class="instruction">
+                            <div class="number">2</div>
+                            <div class="icon jersey"></div>
+                            <div class="text">You have a big choice to make... But don't rush, everything has to be done.</div>
+                        </div>
+                        <div class="instruction">
+                            <div class="number">3</div>
+                            <div class="icon controller"></div>
+                            <div class="text">Stay ready to fight! Don't forget, it is not just a game...</div>
+                        </div>
+                    </div>
+
+                    <div class="selected-panel">
+                        <div class="selected-team-panel">
+                            <div class="team-logo" style="background-image:url('./app/images/teams/canadiens.svg')"></div>
+                            <div class="team-name">Canadien</div>
+                            <div class="team-city">Montreal</div>
+                            <div class="team-rank">17</div>
+                        </div>
+                        <div class="selected-players-panel">
+                            <table class="selected-player">
+                                <tr>
+                                    <td class="photo"><img src="http://cdn.nhl.com/canadiens/v2/photos/mugs/thumb/8471679.jpg" /></td>
+                                    <td class="name">#31 - Carey<span>Price</span></td>
+                                    <td class="position">Goalie</td>
+                                </tr>
+                                <tr>
+                                    <td class="photo"><img src="http://cdn.nhl.com/canadiens/v2/photos/mugs/thumb/8471679.jpg" /></td>
+                                    <td class="name">#31 - Carey<span>Price</span></td>
+                                    <td class="position">Goalie</td>
+                                </tr>
+                                <tr>
+                                    <td class="photo"><img src="http://cdn.nhl.com/canadiens/v2/photos/mugs/thumb/8471679.jpg" /></td>
+                                    <td class="name">#31 - Carey<span>Price</span></td>
+                                    <td class="position">Goalie</td>
+                                </tr>
+                                <tr>
+                                    <td class="photo"><img src="http://cdn.nhl.com/canadiens/v2/photos/mugs/thumb/8471679.jpg" /></td>
+                                    <td class="name">#31 - Carey<span>Price</span></td>
+                                    <td class="position">Goalie</td>
+                                </tr>
+                                <tr>
+                                    <td class="photo"><img src="http://cdn.nhl.com/canadiens/v2/photos/mugs/thumb/8471679.jpg" /></td>
+                                    <td class="name">#31 - Carey<span>Price</span></td>
+                                    <td class="position">Goalie</td>
+                                </tr>
+                                <tr>
+                                    <td class="photo"><img src="http://cdn.nhl.com/canadiens/v2/photos/mugs/thumb/8471679.jpg" /></td>
+                                    <td class="name">#31 - Carey<span>Price</span></td>
+                                    <td class="position">Goalie</td>
+                                </tr>
+                                <tr>
+                                    <td class="photo"><img src="http://cdn.nhl.com/canadiens/v2/photos/mugs/thumb/8471679.jpg" /></td>
+                                    <td class="name">#31 - Carey<span>Price</span></td>
+                                    <td class="position">Goalie</td>
+                                </tr>
+                                <tr>
+                                    <td class="photo"><img src="http://cdn.nhl.com/canadiens/v2/photos/mugs/thumb/8471679.jpg" /></td>
+                                    <td class="name">#31 - Carey<span>Price</span></td>
+                                    <td class="position">Goalie</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gamer right">
+                    <h2 class="title">Player 2</h2>
+                    <div class="teams-panel">
+                        <div class="loader">Please wait a moment...</div>
+                        <div class="teams-display">
+                            <div class="team">
+                                <div class="logo" style="background-image:url('./app/images/teams/flyers.svg')"></div>
+                                <h3 class="team-name">Flyers</h3>
+                                <div class="team-city">Philadelphia</div>
+                            </div>
+                            <div class="team">
+                                <div class="logo" style="background-image:url('./app/images/teams/canadiens.svg')"></div>
+                                <h3 class="team-name">Canadiens</h3>
+                                <div class="team-city">Montreal</div>
+                            </div>
+                        </div>
+
+                        <div class="regions-panel">
+                            <div class="region-button left"></div>
+                            <div class="region-button right"></div>
+                            <div class="region-instruction">Select a region</div>
+                        </div>
+                    </div>
+                    <div class="instructions-panel">
+                        <h2 class="instruction-title">Instructions</h2>
+                        <div class="instruction">
+                            <div class="number">1</div>
+                            <div class="icon map"></div>
+                            <div class="text">Start with choosing the conference of your favorite teams.</div>
+                        </div>
+                        <div class="instruction">
+                            <div class="number">2</div>
+                            <div class="icon jersey"></div>
+                            <div class="text">You have a big choice to make... But don't rush, everything has to be done.</div>
+                        </div>
+                        <div class="instruction">
+                            <div class="number">3</div>
+                            <div class="icon controller"></div>
+                            <div class="text">Stay ready to fight! Don't forget, it is not just a game...</div>
+                        </div>
+                    </div>
+
+                    <div class="selected-panel">
+                        <div class="selected-team-panel">
+                            <div class="team-logo" style="background-image:url('./app/images/teams/canadiens.svg')"></div>
+                            <div class="team-name">Canadien</div>
+                            <div class="team-city">Montreal</div>
+                            <div class="team-rank">17</div>
+                        </div>
+                        <div class="selected-players-panel">
+                            <table class="selected-player">
+                                <tr>
+                                    <td class="photo"><img src="http://cdn.nhl.com/canadiens/v2/photos/mugs/thumb/8471679.jpg" /></td>
+                                    <td class="name">#31 - Carey<span>Price</span></td>
+                                    <td class="position">Goalie</td>
+                                </tr>
+                                <tr>
+                                    <td class="photo"><img src="http://cdn.nhl.com/canadiens/v2/photos/mugs/thumb/8471679.jpg" /></td>
+                                    <td class="name">#31 - Carey<span>Price</span></td>
+                                    <td class="position">Goalie</td>
+                                </tr>
+                                <tr>
+                                    <td class="photo"><img src="http://cdn.nhl.com/canadiens/v2/photos/mugs/thumb/8471679.jpg" /></td>
+                                    <td class="name">#31 - Carey<span>Price</span></td>
+                                    <td class="position">Goalie</td>
+                                </tr>
+                                <tr>
+                                    <td class="photo"><img src="http://cdn.nhl.com/canadiens/v2/photos/mugs/thumb/8471679.jpg" /></td>
+                                    <td class="name">#31 - Carey<span>Price</span></td>
+                                    <td class="position">Goalie</td>
+                                </tr>
+                                <tr>
+                                    <td class="photo"><img src="http://cdn.nhl.com/canadiens/v2/photos/mugs/thumb/8471679.jpg" /></td>
+                                    <td class="name">#31 - Carey<span>Price</span></td>
+                                    <td class="position">Goalie</td>
+                                </tr>
+                                <tr>
+                                    <td class="photo"><img src="http://cdn.nhl.com/canadiens/v2/photos/mugs/thumb/8471679.jpg" /></td>
+                                    <td class="name">#31 - Carey<span>Price</span></td>
+                                    <td class="position">Goalie</td>
+                                </tr>
+                                <tr>
+                                    <td class="photo"><img src="http://cdn.nhl.com/canadiens/v2/photos/mugs/thumb/8471679.jpg" /></td>
+                                    <td class="name">#31 - Carey<span>Price</span></td>
+                                    <td class="position">Goalie</td>
+                                </tr>
+                                <tr>
+                                    <td class="photo"><img src="http://cdn.nhl.com/canadiens/v2/photos/mugs/thumb/8471679.jpg" /></td>
+                                    <td class="name">#31 - Carey<span>Price</span></td>
+                                    <td class="position">Goalie</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>Made with Love&Passion par David Maillard.</footer>
+
+    <script src="./app/jquery-3.1.0.min.js"></script>
+    <script src="/bundle.js"></script>
+  </body>
+</html>
